@@ -4,9 +4,11 @@ import Home from './components/Home'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import { Toaster } from 'react-hot-toast'
+import Footer from './components/Footer'
 function App() {
   return (
-    <><Navbar/><Home/><Projects/><Skills/><Contact/></>
+    <><div><Navbar/><Home/><Projects/><Skills/><Contact/><Footer/></div><Toaster/></>
     
   )
 }

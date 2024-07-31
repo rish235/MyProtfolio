@@ -1,10 +1,10 @@
 import React from 'react'
-
+import {Link, link} from "react-scroll"
 function Navbar() {
     const navItems = [
         { id: 1, text: 'Home' },
-        { id: 2, text: 'About' },
-        { id: 3, text: 'Projects' },
+        { id: 2, text: 'Projects' },
+        { id: 3, text: 'Skills' },
         { id: 4, text: 'Contact' }
     ];
 
@@ -22,7 +22,10 @@ function Navbar() {
                     <ul className="flex space-x-8">
                         {navItems.map(({ id, text }) => (
                         <li key={id} className="text-xl hover:scale-105 duration-200 cursor-pointer ">
-                            <a href={`#${text.toLowerCase()}`}>{text}</a>
+                            <Link to={text}
+                            smooth={true}
+                            duration={500}
+                            activeClass="active">{text}</Link>
                         </li>
                     ))}
                     </ul>

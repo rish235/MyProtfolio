@@ -65,7 +65,7 @@ function Skills() {
         
     ]
   return (
-    <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10' >
+    <div name='Skills' className='max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10' >
         <div className='pl-20'>
             <h1 className=' text-2xl font-bold mb-5'>Skills</h1>
             <div className='flex flex-wrap space-between'>
